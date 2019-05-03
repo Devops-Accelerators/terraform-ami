@@ -1,5 +1,5 @@
-resource "aws_security_group" "jfrog-security" {
-  name        = "jfrog-security"
+resource "aws_security_group" "locust-security" {
+  name        = "locust-security"
 
   egress {
     from_port   = 0
@@ -8,8 +8,8 @@ resource "aws_security_group" "jfrog-security" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   ingress{
-    from_port                = 8081
-    to_port                  = 8081
+    from_port                = 8089
+    to_port                  = 8089
     protocol                 = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -23,6 +23,7 @@ resource "aws_security_group" "jfrog-security" {
 
 
   tags = {
-    Name = "packer-jfrog-security"
+    Name = "packer-locust-security"
   }
 }
+
