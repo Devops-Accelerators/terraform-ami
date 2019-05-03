@@ -12,7 +12,7 @@ data "aws_ami" "ec2-ami" {
   most_recent = true
 }
 
-resource "aws_instance" "web" {
+resource "aws_instance" "jenkins" {
   ami           = "${data.aws_ami.ec2-ami.id}"
   instance_type = "t2.small"
   key_name = "devops-jan"
