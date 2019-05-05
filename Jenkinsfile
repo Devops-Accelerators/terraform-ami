@@ -1,15 +1,14 @@
 node {
-    //stage('Preparation'){
-      //  git 'https://github.com/Devops-Accelerators/terraform-ami.git'
-    //}
-  stage('Jenkins'){
+    stage('Preparation'){
       sh "sudo chmod u+x *.sh"
-      sh "./jenkins.sh"
-  }
-
-  //stage('JFrog'){
-    //  sh "./jfrog.sh"
+    }
+  //stage('Jenkins'){
+    //  sh "./jenkins.sh"
   //}
+
+  stage('JFrog'){
+     sh "./jfrog.sh"
+  }
 
   //stage('Locust'){
     //  sh "./locust.sh"
