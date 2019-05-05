@@ -3,6 +3,7 @@ node {
       //  git 'https://github.com/Devops-Accelerators/terraform-ami.git'
     //}
   stage('Jenkins'){
+      sh "sudo chmod u+x *.sh"
       sh "./jenkins.sh"
   }
 
