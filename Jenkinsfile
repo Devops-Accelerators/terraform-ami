@@ -6,20 +6,20 @@ node {
       sh "./jenkins.sh"
   }
 
-  stage('JFrog'){
-      sh "./jfrog.sh"
-  }
+  //stage('JFrog'){
+    //  sh "./jfrog.sh"
+  //}
 
-  stage('Locust'){
-      sh "./locust.sh"
-  }
+  //stage('Locust'){
+    //  sh "./locust.sh"
+  //}
 
-  stage('Selenium'){
-      sh "./selenium.sh"
-  }
+ // stage('Selenium'){
+   //   sh "./selenium.sh"
+  //}
 
-  stage('Tomcat'){
-      sh "sh tomcat.sh"
-  }
+  //stage('Tomcat'){
+    //  sh "sh tomcat.sh"
+  //}
 
 }
