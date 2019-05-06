@@ -6,7 +6,7 @@ node {
       sh "./jenkins.sh"
   }
 
-  stage('JFrog'){
+  /*stage('JFrog'){
       sh "./jfrog.sh"
   }
 
@@ -20,7 +20,7 @@ node {
 
   stage('Tomcat'){
       sh "sh tomcat.sh"
-  }
+  }*/
 
 }
  
