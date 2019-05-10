@@ -1,6 +1,7 @@
 node {
 
   stage('Preparation'){
+      git 'https://github.com/Devops-Accelerators/terraform-ami.git'
       sh "chmod u+x *.sh"
   }
   stage('Jenkins'){
